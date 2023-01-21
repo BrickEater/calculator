@@ -1,0 +1,17 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.num-button {
+    grid-row: 1 / 2; 
+    grid-column: 1 / 2;
+    padding: 10px;
+    text-align: center;
+  }
+
+.button-7 {
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+}
