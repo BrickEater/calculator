@@ -8,4 +8,31 @@
     grid-row: 2;
     grid-column: 2;
     display: flex;
+    justify-content: center;
+}
+
+.operatorBox {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+}
+
+.operButton {
+    padding: 20px;
+    margin: 2px;
+}
+
+.numBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.button0 {
+    grid-row: 4;
+    grid-column: 1 / 4;
+}
+
+.numButton {
+    padding: 30px;
+    margin: 2px;
 }
