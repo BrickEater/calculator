@@ -11,12 +11,13 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 3fr 1fr;
     justify-content: center;
-    background-color: rgb(103, 57, 168);
+    background-color: rgb(34, 76, 155);
+    padding: 30px;
     border-radius: 10px;
 }
 
 .screen {
-    grid-column: 2;
+    grid-column: span 2;
     grid-row: 1;
     background-color: #f2f2f2;
     padding: 20px;
@@ -42,7 +43,7 @@
 }
 
 .calButton:hover {
-    background-color: rgb(57, 67, 168);
+    background-color: rgb(18, 24, 92);
 }
 
 .numBox {
@@ -60,7 +61,7 @@
 }
 
 .equalClear {
-    grid-column: 2;
+    grid-column: span 2;
     grid-row: 3;
 
     display: grid;
