@@ -1,5 +1,7 @@
 # calculator
 
+30/01/2023 - Attempted to evaluate the equations but I'm struggling. I think I'm missing something by leaning to heavily on the bot. I'll need to come back with pseudo code next time so I understand my goals and how I want to approach this problem. A big issue is it's very easy to make this calculator very complicated.
+
 29/01/2023 - The calculator now listens to the button clicks and adds the innerHTML to a variable. I think I will have to have conditions and parse the equation variable so that it is interpreting the values correctly. I will also need to create logic for BEDMAS and add specifics for the equals and clear buttons.
 
 28/01/2023 - The listener is now set up but I need to write functions for all the buttons. I don't want to write a bunch of functions that are all the same except that it returns something slightly different. There must be a way to have 1 function that covers all the buttons.
