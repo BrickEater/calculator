@@ -1,5 +1,7 @@
 # calculator
 
+01/02/2023 - Laying out the screen to show the inputs of the user. Currently, the divs are on the left side when they need to be on the right, I think it's because I haven't defined the display type. Make sure to add display: grid tomorrow.
+
 31/01/2023 - Finished writing the logic to take values for each operand and the operator.
 
 30/01/2023 - Attempted to evaluate the equations but I'm struggling. I think I'm missing something by leaning to heavily on the bot. I'll need to come back with pseudo code next time so I understand my goals and how I want to approach this problem. A big issue is it's very easy to make this calculator very complicated.

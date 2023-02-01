@@ -19,10 +19,23 @@
 .screen {
     grid-column: span 2;
     grid-row: 1;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
   }
+
+  .firstOperand {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .secondOperand {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .results {}
+
   
 
 .operatorBox {
