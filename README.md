@@ -1,5 +1,7 @@
 # calculator
 
+02/02/2023 - Finished laying out the tags for the screen, now I need to make the button listener add innerHTML and have it feed into the objects rtl (right to left).
+
 01/02/2023 - Laying out the screen to show the inputs of the user. Currently, the divs are on the left side when they need to be on the right, I think it's because I haven't defined the display type. Make sure to add display: grid tomorrow.
 
 31/01/2023 - Finished writing the logic to take values for each operand and the operator.
