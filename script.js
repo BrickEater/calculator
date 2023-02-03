@@ -1,24 +1,23 @@
 const calculator = document.querySelector(".calculator");
 
 let equation = "";
-let firstOperand = "";
-let operator = "";
-let secondOperand = "";
+let firstOperand = document.querySelector(".firstOperand").innerHTML;
+let operator = document.querySelector(".operator").innerHTML;
+let secondOperand = document.querySelector(".secondOperand").innerHTML;
 
 
 calculator.addEventListener("click", function(event) {
 
     if (event.target.matches(".numButton") && operator === "" && secondOperand === "") {
-        firstOperand += event.target.innerHTML;
-        console.log(firstOperand);
+        document.querySelector(".firstOperand").innerHTML += firstOperand + event.target.innerHTML;
+        console.log(document.querySelector(".firstOperand").innerHTML === "")
+        console.log(document.querySelector(".firstOperand").innerHTML);
     }
-    if (event.target.matches(".opButton") && firstOperand != "" && operator === "") {
-        operator += event.target.innerHTML;
-        console.log(operator);
+    if (event.target.matches(".opButton") && document.querySelector(".firstOperand").innerHTML != "" && operator === "") {
+        document.querySelector(".operator").innerHTML += operator + event.target.innerHTML;
     }
     if (event.target.matches(".numButton") && firstOperand != "" && operator != "") {
-        secondOperand += event.target.innerHTML;
-        console.log(secondOperand);
+        document.querySelector(".secondOperand").innerHTML += secondOperand + event.target.innerHTML;
     }
 });
 

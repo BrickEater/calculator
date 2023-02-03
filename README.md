@@ -1,5 +1,7 @@
 # calculator
 
+03/02/2023 - The calculator is taking values to the screen now but still needs to be finished. The variables that are being defined with querySelector doesn't acknowledge innerHTML so I need to change the logic by targeting the actual class and innerHTML in them. 
+
 02/02/2023 - Finished laying out the tags for the screen, now I need to make the button listener add innerHTML and have it feed into the objects rtl (right to left).
 
 01/02/2023 - Laying out the screen to show the inputs of the user. Currently, the divs are on the left side when they need to be on the right, I think it's because I haven't defined the display type. Make sure to add display: grid tomorrow.
