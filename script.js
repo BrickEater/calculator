@@ -1,24 +1,40 @@
 const calculator = document.querySelector(".calculator");
 
-let equation = "";
-let firstOperand = document.querySelector(".firstOperand").innerHTML;
-let operator = document.querySelector(".operator").innerHTML;
-let secondOperand = document.querySelector(".secondOperand").innerHTML;
+let firstOperand = "";
+let operator = "";
+let secondOperand = "";
 
+calculator.addEventListener("mouseup", function(event) {
 
-calculator.addEventListener("click", function(event) {
+    if (event.target.matches(".numButton") &&
+     document.querySelector(".operator").innerHTML === "" &&
+     document.querySelector(".secondOperand").innerHTML === "") {
 
-    if (event.target.matches(".numButton") && operator === "" && secondOperand === "") {
-        document.querySelector(".firstOperand").innerHTML += firstOperand + event.target.innerHTML;
-        console.log(document.querySelector(".firstOperand").innerHTML === "")
-        console.log(document.querySelector(".firstOperand").innerHTML);
+        firstOperand = document.querySelector(".firstOperand").innerHTML += event.target.innerHTML;
+        console.log(firstOperand);
     }
-    if (event.target.matches(".opButton") && document.querySelector(".firstOperand").innerHTML != "" && operator === "") {
-        document.querySelector(".operator").innerHTML += operator + event.target.innerHTML;
+    if (event.target.matches(".opButton") &&
+     document.querySelector(".firstOperand").innerHTML != "" &&
+     document.querySelector(".operator").innerHTML === "") {
+
+        operator = document.querySelector(".operator").innerHTML += event.target.innerHTML;
+        console.log(operator);
     }
-    if (event.target.matches(".numButton") && firstOperand != "" && operator != "") {
-        document.querySelector(".secondOperand").innerHTML += secondOperand + event.target.innerHTML;
+    if (event.target.matches(".numButton") &&
+     document.querySelector(".firstOperand").innerHTML != "" &&
+     document.querySelector(".operator").innerHTML != "") {
+
+        secondOperand = document.querySelector(".secondOperand").innerHTML += event.target.innerHTML;
+        console.log(secondOperand);
     }
+    if (event.target.matches(".equal") &&
+     document.querySelector(".firstOperand").innerHTML != "" &&
+     document.querySelector(".operator").innerHTML != "" &&
+     document.querySelector(".secondOperand").innerHTML != "") {
+
+        console.log(firstOperand, operator, secondOperand);
+    }
+
 });
 
 /* 

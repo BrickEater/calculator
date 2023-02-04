@@ -1,5 +1,10 @@
 # calculator
 
+04/01/2023:
+Finished printing the values of all the equation to the screen. I needed to add variables globally with let and change them inside the if statements without using a declaration key word to ensure it was assigning these values globally.
+To Do:
+I need to have the equal button use a switch statement to take the operands and evaluate the results of the equations. For the cases I probably need to use what I put in the divs instead of the literal operators.
+
 03/02/2023 - The calculator is taking values to the screen now but still needs to be finished. The variables that are being defined with querySelector doesn't acknowledge innerHTML so I need to change the logic by targeting the actual class and innerHTML in them. 
 
 02/02/2023 - Finished laying out the tags for the screen, now I need to make the button listener add innerHTML and have it feed into the objects rtl (right to left).
