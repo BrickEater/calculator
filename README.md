@@ -1,5 +1,10 @@
 # calculator
 
+07/02/2023:
+I have been trying to make a switch statement work for how the calculator evaluates the equation. It needs to address what operator is being used and compile an equation. The problem is I define the operator variable with the innerHTML and I used some specific string code to show nicer operators on the calculator. The innerHTML doesn't carry over an actual operator now. To solve this I thought of changing the operator variable to an array and have index 0 the innerHTML and index 1 the actual operator. Then I could call what I need when I need it.
+To Do:
+Figure out how to have the operator event define the two index and then use index 1 in the switch statement.
+
 04/01/2023:
 Finished printing the values of all the equation to the screen. I needed to add variables globally with let and change them inside the if statements without using a declaration key word to ensure it was assigning these values globally.
 To Do:
