@@ -1,5 +1,10 @@
 # calculator
 
+08/02/2023:
+Finally finished the calculator. It is functional but I haven't done much testing and I don't think I will. I can only see it breaking if I put too many digits inter any of the operands or the result is too large. It would force the div to flex and that would look dumb.
+To Do:
+Figure out if that is the end of the project.
+
 07/02/2023:
 I have been trying to make a switch statement work for how the calculator evaluates the equation. It needs to address what operator is being used and compile an equation. The problem is I define the operator variable with the innerHTML and I used some specific string code to show nicer operators on the calculator. The innerHTML doesn't carry over an actual operator now. To solve this I thought of changing the operator variable to an array and have index 0 the innerHTML and index 1 the actual operator. Then I could call what I need when I need it.
 To Do:

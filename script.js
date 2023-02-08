@@ -17,7 +17,16 @@ calculator.addEventListener("mouseup", function(event) {
      document.querySelector(".firstOperand").innerHTML != "" &&
      document.querySelector(".operator").innerHTML === "") {
 
-        operator[0] = document.querySelector(".operator").innerHTML += event.target.innerHTML;
+        operator.push(document.querySelector(".operator").innerHTML += event.target.innerHTML);
+        if (event.target.matches(".buttonAdd")) {
+            operator.push("+");
+        } else if (event.target.matches(".buttonSubtract")) {
+            operator.push("-");
+        } else if (event.target.matches(".buttonDivide")) {
+            operator.push("/");
+        } else if (event.target.matches(".buttonMultiply")) {
+            operator.push("*");
+        }
     }
     if (event.target.matches(".numButton") &&
      document.querySelector(".firstOperand").innerHTML != "" &&
@@ -30,20 +39,21 @@ calculator.addEventListener("mouseup", function(event) {
      document.querySelector(".operator").innerHTML != "" &&
      document.querySelector(".secondOperand").innerHTML != "") {
 
-        switch (operator[0]) {
+        switch (operator[1]) {
             case ("+"):
                 result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) + parseInt(secondOperand));
-                console.log(result);
                 break;
 
             case ("-"):
-                result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) + parseInt(secondOperand));
-                console.log(result);
+                result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) - parseInt(secondOperand));
                 break;
 
-            case ("&plus;"):
-                result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) + parseInt(secondOperand));
-                console.log(result);
+            case ("/"):
+                result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) / parseInt(secondOperand));
+                break;
+
+            case ("*"):
+                result = document.querySelector(".result").innerHTML = (parseInt(firstOperand) * parseInt(secondOperand));
                 break;
                 
         }
@@ -51,7 +61,7 @@ calculator.addEventListener("mouseup", function(event) {
     }
     if (event.target.matches(".clear")) {
         firstOperand = document.querySelector(".firstOperand").innerHTML = "";
-        operator = document.querySelector(".operator").innerHTML = "";
+        operator = document.querySelector(".operator").innerHTML = [];
         secondOperand = document.querySelector(".secondOperand").innerHTML = "";
         result = document.querySelector(".result").innerHTML = "";
     }
