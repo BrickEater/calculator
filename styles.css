@@ -7,7 +7,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0fr 1fr;
 }
 
 .calculator {
@@ -31,39 +31,39 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 10px;
-  }
-
-  .firstOperand {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: right;
-  }
-
-  .operator {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: right;
-  }
-
-  .secondOperand {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: right;
-  }
-
-  .line {
-    grid-column: span 2;
-    grid-row: 3;
-  }
-  
-  hr {
-    height:4px;
-    color: black;
-    background-color: black;
-    border: 0;
 }
 
-  .result {
+.firstOperand {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+
+.operator {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: right;
+}
+
+.secondOperand {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
+}
+
+.line {
+  grid-column: span 2;
+  grid-row: 3;
+}
+  
+hr {
+  height:4px;
+  color: black;
+  background-color: black;
+  border: 0;
+}
+
+.result {
     grid-column: 2;
     grid-row: 4;
     text-align: right;

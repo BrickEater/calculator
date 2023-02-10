@@ -1,5 +1,9 @@
 # calculator
 
+10/02/2023:
+After looking at the instructions for the project I became annoyed because the way it asks you to do it doesn't consider order of operation and I'm not about that life. I am just going to move on instead of doing all this extra work.
+THE PROJECT IS DONE
+
 08/02/2023:
 Finally finished the calculator. It is functional but I haven't done much testing and I don't think I will. I can only see it breaking if I put too many digits inter any of the operands or the result is too large. It would force the div to flex and that would look dumb.
 To Do:
